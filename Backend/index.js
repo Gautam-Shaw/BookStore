@@ -26,6 +26,10 @@ try {
 } catch (error) {
     console.log("Error: ", error);
 }
+app.get('/', (req, res) => {
+  res.send('✅ Backend is live and running!');
+});
+
 
 // defining routes
 app.use("/book", bookRoute);
